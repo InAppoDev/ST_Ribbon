@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Geometria.ttf">
+            <string>Geometria</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaceholderView" customModule="swim_training" customModuleProvider="target">
+            <connections>
+                <outlet property="addFriendButtonOutlet" destination="JQE-Wi-295" id="cPL-CS-tdq"/>
+                <outlet property="titleLabel" destination="ynV-gf-WgA" id="Kub-xB-0Zd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="4le-2R-gP9">
+                    <rect key="frame" x="20" y="0.0" width="374" height="104"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Friends" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynV-gf-WgA">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="20"/>
+                            <color key="textColor" red="0.01176470588" green="0.16862745100000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="27"/>
+                            </variation>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQE-Wi-295" customClass="GradientButton" customModule="swim_training" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="54" width="374" height="50"/>
+                            <color key="backgroundColor" red="0.01176470588" green="0.16862745100000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="NPc-wx-52s">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                </constraint>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="27"/>
+                            </variation>
+                            <connections>
+                                <action selector="addFriendTapped:" destination="-1" eventType="touchUpInside" id="SOj-3q-jcE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4le-2R-gP9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="HwU-7b-Vcn">
+                    <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                </constraint>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4le-2R-gP9" secondAttribute="bottom" id="VNp-u0-iRT"/>
+                <constraint firstItem="4le-2R-gP9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Y32-69-Ynl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4le-2R-gP9" secondAttribute="trailing" constant="20" id="ar8-p9-ShE">
+                    <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                </constraint>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="44.866071428571423"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="JQE-Wi-295">
+            <size key="intrinsicContentSize" width="69" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

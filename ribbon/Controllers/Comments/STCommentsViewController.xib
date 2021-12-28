@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Geometria.ttf">
+            <string>Geometria</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STCommentsViewController" customModule="swim_training" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomTFConstraint" destination="8HX-NV-2MC" id="cgR-Nl-1D1"/>
+                <outlet property="sendButtonOutlet" destination="FKT-pL-INz" id="IGZ-gB-JPI"/>
+                <outlet property="tableView" destination="r3P-z2-cLd" id="lpX-F4-mZs"/>
+                <outlet property="textField" destination="WpQ-Vs-CRK" id="xQP-os-bSI"/>
+                <outlet property="view" destination="edX-XO-8wb" id="uLm-A6-3ql"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="edX-XO-8wb">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="r3P-z2-cLd">
+                    <rect key="frame" x="0.0" y="44" width="414" height="760"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="NYa-Sk-Lln"/>
+                        <outlet property="delegate" destination="-1" id="vQl-jF-mgY"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPF-Wd-3So">
+                    <rect key="frame" x="0.0" y="812" width="414" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите текст" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WpQ-Vs-CRK">
+                            <rect key="frame" x="10" y="0.0" width="366.5" height="40"/>
+                            <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="J7m-w4-mIh"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKT-pL-INz">
+                            <rect key="frame" x="386.5" y="11" width="17.5" height="18"/>
+                            <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="arrowtriangle.forward.fill" catalog="system"/>
+                            <connections>
+                                <action selector="sendButtonTapped:" destination="-1" eventType="touchUpInside" id="gqE-m7-TN0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="WpQ-Vs-CRK" firstAttribute="top" secondItem="GPF-Wd-3So" secondAttribute="top" id="MkP-HP-fm4"/>
+                        <constraint firstItem="FKT-pL-INz" firstAttribute="leading" secondItem="WpQ-Vs-CRK" secondAttribute="trailing" constant="10" id="PSq-U3-eOP"/>
+                        <constraint firstItem="WpQ-Vs-CRK" firstAttribute="leading" secondItem="GPF-Wd-3So" secondAttribute="leading" constant="10" id="RgR-jw-3w2"/>
+                        <constraint firstAttribute="trailing" secondItem="FKT-pL-INz" secondAttribute="trailing" constant="10" id="c74-Bi-65C"/>
+                        <constraint firstAttribute="bottom" secondItem="WpQ-Vs-CRK" secondAttribute="bottom" id="jiu-ns-0cu"/>
+                        <constraint firstItem="FKT-pL-INz" firstAttribute="centerY" secondItem="GPF-Wd-3So" secondAttribute="centerY" id="rGM-WG-fdX"/>
+                        <constraint firstAttribute="height" constant="40" id="uUD-eY-aGZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="BCg-ap-DOb"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BCg-ap-DOb" firstAttribute="bottom" secondItem="GPF-Wd-3So" secondAttribute="bottom" constant="10" id="8HX-NV-2MC"/>
+                <constraint firstItem="r3P-z2-cLd" firstAttribute="top" secondItem="BCg-ap-DOb" secondAttribute="top" id="AFA-Vb-Tst"/>
+                <constraint firstItem="GPF-Wd-3So" firstAttribute="leading" secondItem="BCg-ap-DOb" secondAttribute="leading" id="Nte-gC-fW1"/>
+                <constraint firstItem="GPF-Wd-3So" firstAttribute="top" secondItem="r3P-z2-cLd" secondAttribute="bottom" constant="8" symbolic="YES" id="Yj0-rZ-uH5"/>
+                <constraint firstItem="r3P-z2-cLd" firstAttribute="leading" secondItem="BCg-ap-DOb" secondAttribute="leading" id="bSq-ZA-TVw"/>
+                <constraint firstItem="GPF-Wd-3So" firstAttribute="trailing" secondItem="BCg-ap-DOb" secondAttribute="trailing" id="ezo-S5-bQA"/>
+                <constraint firstItem="r3P-z2-cLd" firstAttribute="trailing" secondItem="BCg-ap-DOb" secondAttribute="trailing" id="f3u-js-n33"/>
+            </constraints>
+            <point key="canvasLocation" x="-533.33333333333337" y="176.78571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowtriangle.forward.fill" catalog="system" width="128" height="113"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

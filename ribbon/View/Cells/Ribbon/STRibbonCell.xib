@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Geometria.ttf">
+            <string>Geometria</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="341" id="KGk-i7-Jjw" customClass="STRibbonCell" customModule="swim_training" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="341"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="341"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oBn-mr-0Is">
+                        <rect key="frame" x="20" y="10" width="320" height="80.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="0dK-yw-lg1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mY4-E5-cQx">
+                                        <rect key="frame" x="0.0" y="0.5" width="50" height="49"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="1ez-vn-BWM">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="50" id="zlu-Py-ggH">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olo Olo (только что)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ph7-ae-8zc">
+                                        <rect key="frame" x="75" y="0.0" width="245" height="50"/>
+                                        <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="17"/>
+                                        <color key="textColor" red="0.01176470588" green="0.16862745100000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="25"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BoG-h9-DWt">
+                                <rect key="frame" x="0.0" y="60" width="320" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Интересная лягушка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsh-sB-x0f">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="00:00:10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fu-yZ-Xcu">
+                                        <rect key="frame" x="245" y="0.0" width="75" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer" translatesAutoresizingMaskIntoConstraints="NO" id="0dj-cN-pis">
+                        <rect key="frame" x="0.0" y="100.5" width="360" height="202.5"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yVx-Wy-Baf">
+                        <rect key="frame" x="120" y="308" width="120" height="22"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6x-Yx-JHh">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="22"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="17" image="hand.thumbsup.fill" catalog="system">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
+                                <connections>
+                                    <action selector="likeButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="huC-yt-0Jk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5N-Kf-TWn">
+                                <rect key="frame" x="60" y="0.0" width="60" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="cuI-BH-sax"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="20" image="text.bubble.fill" catalog="system"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
+                                <connections>
+                                    <action selector="commentButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3aT-eR-pQF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0dj-cN-pis" firstAttribute="top" secondItem="oBn-mr-0Is" secondAttribute="bottom" constant="10" id="65B-Nu-UNk"/>
+                    <constraint firstItem="0dj-cN-pis" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DSL-Zd-Hrv"/>
+                    <constraint firstAttribute="trailing" secondItem="oBn-mr-0Is" secondAttribute="trailing" constant="20" id="FJ5-fD-kj5"/>
+                    <constraint firstItem="yVx-Wy-Baf" firstAttribute="top" secondItem="0dj-cN-pis" secondAttribute="bottom" constant="5" id="Ipu-aD-89e"/>
+                    <constraint firstItem="yVx-Wy-Baf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="JPW-h7-ZCn"/>
+                    <constraint firstItem="oBn-mr-0Is" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="KT6-Id-fH4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="yVx-Wy-Baf" secondAttribute="bottom" id="Qc5-rS-ezk"/>
+                    <constraint firstItem="oBn-mr-0Is" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="YdV-lH-ZAY"/>
+                    <constraint firstAttribute="trailing" secondItem="0dj-cN-pis" secondAttribute="trailing" id="ken-FL-xFN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImage" destination="mY4-E5-cQx" id="Eqc-0u-kWO"/>
+                <outlet property="commentButtonOutlet" destination="s5N-Kf-TWn" id="Bgy-Oy-KMy"/>
+                <outlet property="descriptionLabel" destination="hsh-sB-x0f" id="4AZ-y3-iTl"/>
+                <outlet property="likeButtonOutlet" destination="M6x-Yx-JHh" id="l3H-5B-mET"/>
+                <outlet property="mainImage" destination="0dj-cN-pis" id="oUU-mB-Pln"/>
+                <outlet property="nameLabel" destination="Ph7-ae-8zc" id="aLE-4V-FME"/>
+                <outlet property="timeLabel" destination="4Fu-yZ-Xcu" id="WhC-b2-hed"/>
+            </connections>
+            <point key="canvasLocation" x="46.376811594202906" y="159.70982142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
+        <image name="layer" width="900" height="560"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
+    </resources>
+</document>

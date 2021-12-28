@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Geometria.ttf">
+            <string>Geometria</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STFriendsViewController" customModule="swim_training" customModuleProvider="target">
+            <connections>
+                <outlet property="addFriendButtonOultet" destination="zeN-Fq-Eeh" id="s4s-x5-pdS"/>
+                <outlet property="tableView" destination="Qmk-b5-bIr" id="BOB-g5-Xxv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Qmk-b5-bIr">
+                    <rect key="frame" x="0.0" y="44" width="414" height="760"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="D1W-vf-oQG"/>
+                        <outlet property="delegate" destination="-1" id="rlF-t0-uGI"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeN-Fq-Eeh" customClass="GradientButton" customModule="swim_training" customModuleProvider="target">
+                    <rect key="frame" x="20" y="812" width="374" height="50"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="JHi-Ds-g2u">
+                            <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Добавить друга">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="27"/>
+                    </variation>
+                    <connections>
+                        <action selector="addFriendTapped:" destination="-1" eventType="touchUpInside" id="TZf-SG-gnT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Qmk-b5-bIr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GPu-9L-QSa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zeN-Fq-Eeh" secondAttribute="trailing" constant="20" id="RtY-jT-elH">
+                    <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                </constraint>
+                <constraint firstItem="zeN-Fq-Eeh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="aVh-eL-L05">
+                    <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                </constraint>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zeN-Fq-Eeh" secondAttribute="bottom" id="q5Y-Ch-laJ">
+                    <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                </constraint>
+                <constraint firstItem="zeN-Fq-Eeh" firstAttribute="top" secondItem="Qmk-b5-bIr" secondAttribute="bottom" constant="8" symbolic="YES" id="tKk-RI-HN4"/>
+                <constraint firstItem="Qmk-b5-bIr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ttn-IJ-sdP"/>
+                <constraint firstItem="Qmk-b5-bIr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ucF-T2-gXp"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="63.616071428571423"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="zeN-Fq-Eeh">
+            <size key="intrinsicContentSize" width="160" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
